@@ -1,0 +1,931 @@
+/*REGLAS GENERALES*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    position: fixed;
+    z-index: +1;
+    top: 0;
+    right: 0;
+    background-color: rgba(242, 247, 239, 0.6);
+    border-radius: 20px;
+    height: 50px;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer{
+    background-color: rgba(101, 143, 75, 0.6);
+    padding: 80px;
+    font-size: 20px;
+    border-top: 5px rgba(98, 141, 71, 0.6) solid;
+}
+
+a{
+    color: #13070A;
+    text-decoration: none;
+}
+
+a:focus{
+    border-bottom: 5px solid;
+}
+
+a:hover{
+    border-bottom: 3px solid green;
+    color: #265301;
+    cursor:pointer;
+}
+
+a:active{
+    background: #265301;
+    color: #CDFEAA;
+}
+
+body{
+    font-family: Gabriela, 'Open Sans', sans-serif; 
+    background: hsla(97, 31%, 43%, 1);
+
+    background: linear-gradient(270deg, hsla(97, 31%, 43%, 1) 0%, hsla(200, 10%, 94%, 1) 74%);
+    
+    background: -moz-linear-gradient(270deg, hsla(97, 31%, 43%, 1) 0%, hsla(200, 10%, 94%, 1) 74%);
+    
+    background: -webkit-linear-gradient(270deg, hsla(97, 31%, 43%, 1) 0%, hsla(200, 10%, 94%, 1) 74%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#658F4B", endColorstr="#EEF0F1", GradientType=1 );
+}
+
+.logo1{
+    background-color: transparent;
+    position: relative;
+    top: 5px;
+ }
+ 
+ p{
+     text-align: left;
+     color: #13070A;
+     font-size: 20px;
+ }
+
+h1{
+    padding: 30px; 
+    font-size: 50px;  
+}
+
+h3{
+    background-color: #D0AEBB;
+    color: white;
+    padding: 5px;
+    letter-spacing: 4px;
+    border-radius: 50% 20% / 10% 40%;
+    font-size: 30px;
+}
+
+h4{
+    background-color: #C5DFD6;
+    color: #13070A;
+    font-style:oblique;
+    letter-spacing: 2px;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+/*INDEX*/
+
+
+#videoPrincipal{
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    z-index: -1;
+ }
+
+ .logoPrincipal{
+    margin-left: 35%;
+    margin-top: 10%;
+    transition: all 1s;
+}
+
+.logoPrincipal:hover{
+    transform: scale(1.05);
+}
+.johnmu{
+    padding-bottom: 40px;
+    background-color: transparent;
+    font-size: calc(1em + 1vw);    
+    color: white;
+    text-align: center;
+    margin-top: 23%;
+    transition: all 1s;
+}
+
+.johnmu:hover{
+    transform: translate(0px, -20px);
+}
+
+
+.section1{
+    padding-bottom: 15%;
+}
+
+.section2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "artId artSent artVal"
+    ;
+    grid-column-gap: 2%;       
+    justify-content: center;
+    padding-bottom: 5%;
+    margin: 1%;
+}
+
+.section3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-areas:
+    "hFundam hFundam hFundam"
+    "artAyur artReik artBam"
+    ;
+    grid-column-gap: 2%;
+    padding-top: 5%;
+    margin: 1%;
+}
+
+.aIdentidad{
+    grid-area: artId;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid rgba(82, 116, 61, 0.4);
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+    transition: all 1s;
+}
+
+.aIdentidad:hover{
+    transform: scale(1.02);
+}
+
+.aSentido{
+    grid-area: artSent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid rgba(82, 116, 61, 0.4);
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+    transition: all 1s;
+}
+
+.aSentido:hover {
+    transform: scale(1.02);
+}
+
+.aValores{
+    grid-area: artVal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid rgba(82, 116, 61, 0.4);
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+    transition: all 1s;
+}
+
+.aValores:hover {
+    transform: scale(1.02);
+}
+
+.hFundamentos{
+    grid-area: hFundam;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid #C5DFD6;
+    background-color: #C5DFD6;
+    margin-bottom: 20px;
+    transition: all 1s;
+}
+
+.hFundamentos:hover{
+    transform: scale(1.02);
+}
+
+.aAyurveda{
+    grid-area: artAyur;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid rgba(82, 116, 61, 0.4);
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+    transition: all 1s;
+}
+
+.aAyurveda:hover{
+    transform: scale(1.02);
+}
+
+.aReiki{
+    grid-area: artReik;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid rgba(82, 116, 61, 0.4);
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+    transition: all 1s;
+}
+
+.aReiki:hover{
+    transform: scale(1.02);
+}
+
+.aBambu{
+    grid-area: artBam; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid rgba(82, 116, 61, 0.4);
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+    transition: all 1s;
+}
+
+.aBambu:hover{
+    transform: scale(1.02);
+}
+
+.sectionContacto{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin: 1%;
+} 
+
+.contacto{
+    padding: 3%; 
+    font-size: 35px;
+    background-color:  rgba(82, 116, 61, 0.6);
+}
+
+.info{
+    padding: 50px;
+    background-color: #dce5e2;
+    font-size: 30px;
+}
+
+.info2{
+    padding: 50px;
+    background-color: #C5DFD6;
+    font-size: 20px;
+    width: 50%;
+}
+
+.mapa{
+    padding: 50px;
+    width: 60%;
+}
+
+
+/*SERVICIOS*/
+
+.section4{
+    margin: 7%;
+    background-color: #D0AEBB;
+    border-radius: 3%;
+    padding: 3%;
+}
+
+.plan{
+    color:#dee4da;
+}
+
+.planIntegral{
+    padding-bottom: 30px;
+    padding: 30px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.actividades{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    color:#dee4da;
+    background-color: #D0AEBB;
+    font-size: 250%;
+    padding: 2%;
+    border-radius: 3%;
+}
+
+.section5{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "gReiki gGemas gMedita"
+    "gAkashi gAroma gMusico"
+    ;
+    grid-column-gap: 2%;       
+    grid-row-gap: 2%;
+    justify-content: center;
+    margin: 1%;
+    padding-bottom: 10%;
+}
+
+.dReiki{
+    grid-area: gReiki;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4e2dd;
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.dGemas{
+    grid-area: gGemas;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4e2dd;
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.dMedita{
+    grid-area: gMedita;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4e2dd;
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.dAkashi{
+    grid-area: gAkashi;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4e2dd;
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.dAroma{
+    grid-area: gAroma;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4e2dd;
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.dMusico{
+    grid-area: gMusico;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4e2dd;
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+/*PRODUCTOS*/
+
+
+.section6{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+.bambooFondo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    margin: 0%;
+}
+
+.productos{
+    font-size: 50px;
+    background-color: #D0AEBB;
+    border: 10px solid #e7f1ee;
+    width: 50%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 50% 20% / 10% 40%;
+}
+
+
+/*HOLISTICA*/
+
+.section7{
+    display: grid;
+    grid-template-columns: repet(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "vel res inci"
+    "cuenc sahu cris"
+    "cart libr limp"
+    ;
+    grid-column-gap: 2%;       
+    grid-row-gap: 2%;
+    justify-content: center;
+    margin: 1%;
+    padding-top: 7%;
+    padding-bottom: 10%;
+}
+
+.velas{
+    grid-area: vel;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4e2dd;
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.resinas{
+    grid-area: res;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4e2dd;
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.inciensos{
+    grid-area: inci;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4e2dd;
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.cuencos{
+    grid-area: cuenc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4e2dd;
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.sahumo{
+    grid-area: sahu;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4e2dd;
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.cristales{
+    grid-area: cris;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4e2dd;
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+}
+.cartas{
+    grid-area: cart;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4e2dd;
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.libros{
+    grid-area: libr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4e2dd;
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.limpieza{
+    grid-area: limp;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4e2dd;
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+/*COCINA*/
+
+.section8{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "espe mort acei"
+    "hierb plant ."
+    ;
+    grid-column-gap: 2%;       
+    grid-row-gap: 2%;
+    justify-content: center;
+    margin: 1%;
+    padding-top: 7%;
+    padding-bottom: 10%;
+}
+
+.especias{
+    grid-area: espe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4e2dd;
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.morteros{
+    grid-area: mort;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4e2dd;
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.aceite{
+    grid-area: acei;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4e2dd;
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.hierbas{
+    grid-area: hierb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4e2dd;
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.plantas{
+    grid-area: plant;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #d4e2dd;
+    background-color: #C5DFD6;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 576px){
+
+/*reglas generales 576px*/
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    height: 4%;
+    right: auto;
+}
+
+.logo1{
+    display: none;
+}
+
+p{
+    text-align: center;
+    color: #13070A;
+    font-size: 15px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 15px;
+}
+
+h1{
+    padding: 0%;
+}
+
+/*index 576px*/
+
+#videoPrincipal{
+    position: relative;
+    justify-content: center;
+ }
+
+.logoPrincipal{
+    margin-top: 1%;
+}
+
+.johnmu{
+    padding-bottom: 40px;
+    background-color: transparent;
+    font-size: calc(0.8em + 0.8vw);    
+    color: white;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.section1{
+    padding-bottom: 0;
+}
+
+.imgIndex{
+    width: 100%;
+    height: 100%;
+}
+
+.section2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas:
+    "artId" 
+    "artSent"
+    "artVal"
+    ;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "hFundam"
+    "artAyur" 
+    "artReik" 
+    "artBam"
+    ;
+    width: 100%;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.sectionContacto{
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    background-color: #dce5e2;
+    font-size: 30px;
+}
+
+.info2{
+    display: flex;
+    justify-content: center;
+    background-color: #C5DFD6;
+    font-size: 15px;
+}
+
+.mapa{
+    padding: 50px;
+    width: 100%;
+}
+
+/*servicios 576px*/
+
+.section4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    padding: 3%;
+}
+
+.plan{
+    padding-bottom: 5px;
+    padding-top: 50px;
+    font-size: 35px;
+    color:#dee4da;
+    align-items: center;
+}
+
+.planIntegral{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.actividades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 2%;
+    border-radius: 3%;
+}
+
+.section5{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6 1fr);
+    grid-template-areas: 
+    "gReiki" 
+    "gGemas"
+    "gMedita"
+    "gAkashi" 
+    "gAroma" 
+    "gMusico"
+    ;
+    grid-column-gap: 0%;       
+    grid-row-gap: 0%;
+    justify-content: center;
+    margin: 1%;
+    padding-bottom: 10%;
+}
+
+.dReiki{
+    grid-area: gReiki;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.dGemas{
+    grid-area: gGemas;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.dMedita{
+    grid-area: gMedita;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.dAkashi{
+    grid-area: gAkashi;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.dAroma{
+    grid-area: gAroma;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.dMusico{
+    grid-area: gMusico;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+
+/*productos 576px*/
+
+.section6{
+    margin-top: 20%;
+    padding-bottom: 30%;
+}
+
+.bambooFondo{
+    display: none;
+}
+
+.productos{
+    font-size: 50px;
+    width: 80%;
+    padding: 2%;
+    margin: 10px;
+}
+
+/*holistica 576px*/
+
+
+.section7{
+    padding-top: 12%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: 
+    "vel"
+    "res" 
+    "inci"
+    "cuenc" 
+    "sahu" 
+    "cris"
+    "cart" 
+    "libr" 
+    "limp"
+    ;
+    grid-column-gap: 1%;       
+    grid-row-gap: 0.5%;
+    padding-bottom: 40%;
+}
+
+/*cocina 576px*/
+
+.section8{
+    padding-top: 12%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5;
+    grid-template-areas: 
+    "espe" 
+    "mort" 
+    "acei"
+    "hierb" 
+    "plant" 
+    ;
+    grid-column-gap: 2%;       
+    grid-row-gap: 0.5%;
+    justify-content: center;
+    margin: 1%;
+    padding-bottom: 40%;
+}
+
+
+}
