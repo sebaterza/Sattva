@@ -170,8 +170,15 @@ h4{
     transition: all 1s;
 }
 
+@keyframes fondosIndex{
+    50%{
+        background-color: #faf0f4;
+    }
+}
+
 .aIdentidad:hover{
     transform: scale(1.02);
+    animation: fondosIndex 3s;
 }
 
 .aSentido{
@@ -188,6 +195,7 @@ h4{
 
 .aSentido:hover {
     transform: scale(1.02);
+    animation: fondosIndex 3s;
 }
 
 .aValores{
@@ -204,6 +212,8 @@ h4{
 
 .aValores:hover {
     transform: scale(1.02);
+    animation: fondosIndex 3s;
+
 }
 
 .hFundamentos{
@@ -219,6 +229,7 @@ h4{
 
 .hFundamentos:hover{
     transform: scale(1.02);
+    animation: fondosIndex 3s;
 }
 
 .aAyurveda{
@@ -235,6 +246,7 @@ h4{
 
 .aAyurveda:hover{
     transform: scale(1.02);
+    animation: fondosIndex 3s;
 }
 
 .aReiki{
@@ -251,6 +263,7 @@ h4{
 
 .aReiki:hover{
     transform: scale(1.02);
+    animation: fondosIndex 3s;
 }
 
 .aBambu{
@@ -267,6 +280,7 @@ h4{
 
 .aBambu:hover{
     transform: scale(1.02);
+    animation: fondosIndex 3s;
 }
 
 .sectionContacto{
