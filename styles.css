@@ -16,6 +16,9 @@
     margin: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 footer{
@@ -23,6 +26,10 @@ footer{
     padding: 80px;
     font-size: 20px;
     border-top: 5px rgba(98, 141, 71, 0.6) solid;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
 }
 
 a{
@@ -64,14 +71,11 @@ body{
 }
 
 .logo1{
-    background-color: transparent;
-    position: relative;
-    top: 5px;
  }
  
  p{
      color: #13070A;
-     font-size: 20px;
+     font-size: 15px;
  }
 
 h1{
@@ -110,17 +114,18 @@ h4{
  .logoPrincipal{
     margin-left: 35%;
     margin-top: 10%;
-    transition: all 1s;
+    transition: all 1s !important;
 }
 
+
 .logoPrincipal:hover{
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
 }
 
 .johnmu{
     padding-bottom: 40px;
     background-color: transparent;
-    font-size: calc(1em + 1vw);    
+    font-size: calc(0.8em + 0.8vw);    
     color: white;
     text-align: center;
     margin-top: 23%;
@@ -143,8 +148,7 @@ h4{
     "artId artSent artVal"
     ;
     grid-column-gap: 1%;       
-    padding-bottom: 5%;
-    margin: 1%;
+    padding: 20px;
 }
 
 .section3{
@@ -156,8 +160,7 @@ h4{
     "artAyur artReik artBam"
     ;
     grid-column-gap: 1%;
-    padding-top: 5%;
-    margin: 1%;
+    padding: 20px;
 }
 
 @keyframes fondosIndex{
@@ -172,8 +175,7 @@ h4{
     }
 }
 
-.aIdentidad{
-    grid-area: artId;
+.articulo{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -182,6 +184,17 @@ h4{
     border-radius: 7px;
     padding: 10px;
     transition: all 1s;
+}
+
+.articulo img{
+    max-width: 100%;
+    object-fit: cover;
+    height: 400px;
+    padding-bottom: 10px;
+}
+
+.aIdentidad{
+    grid-area: artId;
 }
 
 
@@ -192,14 +205,6 @@ h4{
 
 .aSentido{
     grid-area: artSent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 10px solid rgba(82, 116, 61, 0.4);
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
-    transition: all 1s;
 }
 
 .aSentido:hover {
@@ -209,14 +214,6 @@ h4{
 
 .aValores{
     grid-area: artVal;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 10px solid rgba(82, 116, 61, 0.4);
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
-    transition: all 1s;
 }
 
 .aValores:hover {
@@ -242,14 +239,6 @@ h4{
 
 .aAyurveda{
     grid-area: artAyur;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 10px solid rgba(82, 116, 61, 0.4);
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
-    transition: all 1s;
 }
 
 .aAyurveda:hover{
@@ -259,14 +248,6 @@ h4{
 
 .aReiki{
     grid-area: artReik;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 10px solid rgba(82, 116, 61, 0.4);
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
-    transition: all 1s;
 }
 
 .aReiki:hover{
@@ -276,14 +257,6 @@ h4{
 
 .aBambu{
     grid-area: artBam; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 10px solid rgba(82, 116, 61, 0.4);
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
-    transition: all 1s;
 }
 
 .aBambu:hover{
@@ -313,7 +286,7 @@ h4{
 .info2{
     padding: 50px;
     background-color: #C5DFD6;
-    font-size: 20px;
+    font-size: 17px;
     width: 50%;
 }
 
