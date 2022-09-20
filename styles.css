@@ -69,9 +69,6 @@ body{
     
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#658F4B", endColorstr="#EEF0F1", GradientType=1 );
 }
-
-.logo1{
- }
  
  p{
      color: #13070A;
@@ -724,52 +721,35 @@ h1{
     padding-bottom: 10%;
 }
 
-.dReiki{
-    grid-area: gReiki;
+.sec5{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
+}
+
+.dReiki{
+    grid-area: gReiki;
 }
 
 .dGemas{
     grid-area: gGemas;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
 }
 
 .dMedita{
     grid-area: gMedita;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
 }
 
 .dAkashi{
     grid-area: gAkashi;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
 }
 
 .dAroma{
     grid-area: gAroma;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
 }
 
 .dMusico{
     grid-area: gMusico;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
 }
 
 
@@ -1020,52 +1000,35 @@ h1{
     padding-bottom: 10%;
 }
 
-.dReiki{
-    grid-area: gReiki;
+.sec5{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
+}
+
+.dReiki{
+    grid-area: gReiki;
 }
 
 .dGemas{
     grid-area: gGemas;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
 }
 
 .dMedita{
     grid-area: gMedita;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
 }
 
 .dAkashi{
     grid-area: gAkashi;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
 }
 
 .dAroma{
     grid-area: gAroma;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
 }
 
 .dMusico{
     grid-area: gMusico;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
 }
 
 
