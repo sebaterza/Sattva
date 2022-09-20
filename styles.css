@@ -343,8 +343,7 @@ h4{
     padding-bottom: 10%;
 }
 
-.dReiki{
-    grid-area: gReiki;
+.sec5{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -352,61 +351,41 @@ h4{
     background-color: #C5DFD6;
     border-radius: 7px;
     padding: 10px;
+}
+
+.section5 button{
+    font-size: 25px;
+    font-style: italic;
+    --bs-btn-bg: #d4e2dd;
+    --bs-btn-border-color: white;
+    --bs-btn-hover-bg: #D0AEBB;
+    --bs-btn-hover-border-color: white;
+    --bs-btn-active-bg: #265301;
+    --bs-btn-active-border-color: #d4e2dd; 
+}
+
+.dReiki{
+    grid-area: gReiki;
 }
 
 .dGemas{
     grid-area: gGemas;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid #d4e2dd;
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
 }
 
 .dMedita{
     grid-area: gMedita;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid #d4e2dd;
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
 }
 
 .dAkashi{
     grid-area: gAkashi;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid #d4e2dd;
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
 }
 
 .dAroma{
     grid-area: gAroma;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid #d4e2dd;
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
 }
 
 .dMusico{
     grid-area: gMusico;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid #d4e2dd;
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
 }
 
 /*PRODUCTOS*/
@@ -416,6 +395,11 @@ h4{
     display: flex;
     flex-direction:row;
     justify-content: space-around;
+}
+
+.section6 .productos a{
+    font-size: 40px;
+    background-color: #d4e2dd  ;
 }
 
 .bambooFondo{
@@ -435,6 +419,11 @@ h4{
     flex-direction: column;
     margin: 10px;
     border-radius: 50% 20% / 10% 40%;
+}
+
+.productos a{
+    display: flex;
+    justify-content: right;
 }
 
 
@@ -457,8 +446,7 @@ h4{
     padding-bottom: 10%;
 }
 
-.velas{
-    grid-area: vel;
+.sec7{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -466,93 +454,42 @@ h4{
     background-color: #C5DFD6;
     border-radius: 7px;
     padding: 10px;
+}
+
+
+.velas{
+    grid-area: vel;
 }
 
 .resinas{
     grid-area: res;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid #d4e2dd;
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
 }
 
 .inciensos{
     grid-area: inci;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid #d4e2dd;
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
 }
 
 .cuencos{
     grid-area: cuenc;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid #d4e2dd;
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
 }
 
 .sahumo{
     grid-area: sahu;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid #d4e2dd;
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
 }
 
 .cristales{
     grid-area: cris;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid #d4e2dd;
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
 }
 .cartas{
     grid-area: cart;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid #d4e2dd;
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
 }
 
 .libros{
     grid-area: libr;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid #d4e2dd;
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
 }
 
 .limpieza{
     grid-area: limp;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid #d4e2dd;
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
 }
 
 /*COCINA*/
@@ -573,8 +510,7 @@ h4{
     padding-bottom: 10%;
 }
 
-.especias{
-    grid-area: espe;
+.sec8{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -582,50 +518,26 @@ h4{
     background-color: #C5DFD6;
     border-radius: 7px;
     padding: 10px;
+}
+
+.especias{
+    grid-area: espe;
 }
 
 .morteros{
     grid-area: mort;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid #d4e2dd;
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
 }
 
 .aceite{
     grid-area: acei;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid #d4e2dd;
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
 }
 
 .hierbas{
     grid-area: hierb;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid #d4e2dd;
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
 }
 
 .plantas{
     grid-area: plant;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid #d4e2dd;
-    background-color: #C5DFD6;
-    border-radius: 7px;
-    padding: 10px;
 }
 
 @media screen and (max-width: 768px){
@@ -676,6 +588,7 @@ h1{
 #videoPrincipal{
     position: relative;
     justify-content: center;
+
  }
 
 .logoPrincipal{
@@ -724,7 +637,6 @@ h1{
     ;
     width: 100%;
     justify-content: center;
-
     align-items: center;
 }
 
