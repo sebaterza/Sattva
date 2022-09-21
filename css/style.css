@@ -1,0 +1,258 @@
+/*REGLAS GENERALES*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(242, 247, 239, 0.6);
+  border-radius: 20px;
+  height: 50px;
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Gabriela, "Open Sans", sans-serif;
+}
+
+footer {
+  background-color: rgba(101, 143, 75, 0.6);
+  padding: 80px;
+  font-size: 20px;
+  border-top: 5px rgba(98, 141, 71, 0.6) solid;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
+}
+
+a {
+  color: #13070A;
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: 3px solid green;
+  color: #265301;
+  cursor: pointer;
+  font-weight: bold;
+}
+a:focus {
+  border-bottom: 5px solid;
+}
+a:active {
+  background: #265301;
+  color: #CDFEAA;
+}
+
+p {
+  color: #13070A;
+  font-size: 15px;
+}
+
+h1 {
+  padding: 30px;
+  font-size: 50px;
+}
+
+h3 {
+  background-color: #D0AEBB;
+  color: #ffffff;
+  padding: 5px;
+  letter-spacing: 4px;
+  border-radius: 50% 20%/10% 40%;
+  font-size: 30px;
+}
+
+h4 {
+  background-color: #C5DFD6;
+  color: #13070A;
+  font-style: oblique;
+  letter-spacing: 2px;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+#videoPrincipal {
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.logoPrincipal {
+  margin-left: 35%;
+  margin-top: 10%;
+  transition: all 1s !important;
+}
+.logoPrincipal:hover {
+  transform: scale(1.05) !important;
+}
+
+.johnmu {
+  padding-bottom: 40px;
+  background-color: transparent;
+  font-size: calc(0.8em + 0.8vw);
+  color: white;
+  text-align: center;
+  margin-top: 23%;
+  transition: all 1s;
+}
+.johnmu:hover {
+  transform: translate(0px, -20px);
+}
+
+.section1 {
+  padding-bottom: 10%;
+}
+
+.section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "artId artSent artVal";
+  grid-column-gap: 1%;
+  padding: 20px;
+}
+
+.section3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr;
+  grid-template-areas: "hFundam hFundam hFundam" "artAyur artReik artBam";
+  grid-column-gap: 1%;
+  padding: 20px;
+}
+
+@keyframes fondosIndex {
+  50% {
+    background-color: #faf0f4;
+  }
+}
+@keyframes fondosFundam {
+  20% {
+    background-color: #D0AEBB;
+  }
+}
+.articulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 10px solid rgba(82, 116, 61, 0.4);
+  background-color: #C5DFD6;
+  border-radius: 7px;
+  padding: 10px;
+  transition: all 1s;
+}
+.articulo img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 400px;
+  padding-bottom: 10px;
+}
+
+.aIdentidad {
+  grid-area: artId;
+}
+.aIdentidad:hover {
+  transform: scale(1.02);
+  animation: fondosIndex 10s;
+}
+
+.aSentido {
+  grid-area: artSent;
+}
+.aSentido:hover {
+  transform: scale(1.02);
+  animation: fondosIndex 10s;
+}
+
+.aValores {
+  grid-area: artVal;
+}
+.aValores:hover {
+  transform: scale(1.02);
+  animation: fondosIndex 10s;
+}
+
+.hFundamentos {
+  grid-area: hFundam;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 10px solid #C5DFD6;
+  background-color: #C5DFD6;
+  margin-bottom: 20px;
+  transition: all 1s;
+}
+.hFundamentos:hover {
+  animation: fondosFundam 10s;
+}
+
+.aAyurveda {
+  grid-area: artAyur;
+}
+.aAyurveda:hover {
+  transform: scale(1.02);
+  animation: fondosIndex 10s;
+}
+
+.aReiki {
+  grid-area: artReik;
+}
+.aReiki:hover {
+  transform: scale(1.02);
+  animation: fondosIndex 10s;
+}
+
+.aBambu {
+  grid-area: artBam;
+}
+.aBambu:hover {
+  transform: scale(1.02);
+  animation: fondosIndex 10s;
+}
+
+.sectionContacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1%;
+}
+
+.contacto {
+  padding: 3%;
+  font-size: 35px;
+  background-color: rgba(82, 116, 61, 0.6);
+}
+
+.info {
+  padding: 50px;
+  background-color: #dce5e2;
+  font-size: 30px;
+}
+
+.info2 {
+  padding: 50px;
+  background-color: #C5DFD6;
+  font-size: 17px;
+  width: 50%;
+}
+
+.mapa {
+  padding: 50px;
+  width: 60%;
+}
+
+
