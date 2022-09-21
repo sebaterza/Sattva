@@ -27,7 +27,7 @@
         padding-bottom: 40px;
         background-color: transparent;
         font-size: calc(0.8em + 0.8vw);    
-        color: white;
+        color: $color-tres;
         text-align: center;
         margin-top: 23%;
         transition: all 1s;
@@ -66,13 +66,13 @@
 
 @keyframes fondosIndex{
     50%{
-        background-color: #faf0f4;
+        background-color: $color-transicion1;
     }
 }
 
 @keyframes fondosFundam {
     20%{
-        background-color: #D0AEBB;
+        background-color: $color-dos;
     }
 }
 
@@ -80,8 +80,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 10px solid rgba(82, 116, 61, 0.4);
-        background-color: #C5DFD6;
+        border: 10px solid $color-articulo;
+        background-color: $color-uno;
         border-radius: 7px;
         padding: 10px;
         transition: all 1s;
@@ -122,8 +122,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 10px solid #C5DFD6;
-        background-color: #C5DFD6;
+        border: 10px solid $color-uno;
+        background-color: $color-uno;
         margin-bottom: 20px;
         transition: all 1s;
     &:hover{
@@ -165,18 +165,18 @@
 .contacto{
     padding: 3%; 
     font-size: 35px;
-    background-color:  rgba(82, 116, 61, 0.6);
+    background-color:  $color-contacto;
 }
 
 .info{
     padding: 50px;
-    background-color: #dce5e2;
+    background-color: $color-info;
     font-size: 30px;
 }
 
 .info2{
     padding: 50px;
-    background-color: #C5DFD6;
+    background-color: $color-uno;
     font-size: 17px;
     width: 50%;
 }
@@ -191,12 +191,12 @@
 
 .section4{
     margin: 7%;
-    background-color: #D0AEBB;
+    background-color: $color-dos;
     border-radius: 3%;
     padding: 3%;
 
     .plan{
-        color:#dee4da;
+        color:$color-plan;
 
         .planIntegral{
             padding-bottom: 30px;
@@ -214,8 +214,8 @@
     display: flex;
     justify-content: center;
     margin: 30px;
-    color:#dee4da;
-    background-color: #D0AEBB;
+    color:$color-plan;
+    background-color: $color-dos;
     font-size: 250%;
     padding: 2%;
     border-radius: 3%;
@@ -238,12 +238,12 @@
     button{
         font-size: 25px;
         font-style: italic;
-        --bs-btn-bg: #d4e2dd;
+        --bs-btn-bg: $color-button;
         --bs-btn-border-color: white;
         --bs-btn-hover-bg: #D0AEBB;
         --bs-btn-hover-border-color: white;
         --bs-btn-active-bg: #265301;
-        --bs-btn-active-border-color: #d4e2dd; 
+        --bs-btn-active-border-color: $color-button; 
     }
 }
 
@@ -251,8 +251,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px solid #d4e2dd;
-    background-color: #C5DFD6;
+    border: 3px solid $color-button;
+    background-color: $color-uno;
     border-radius: 7px;
     padding: 10px;
 
@@ -290,8 +290,8 @@
 
     .productos{
         font-size: 50px;
-        background-color: #D0AEBB;
-        border: 10px solid #e7f1ee;
+        background-color: $color-dos;
+        border: 10px solid $color-productos1;
         width: 50%;
         padding: 2%;
         display: flex;
@@ -334,8 +334,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 3px solid #d4e2dd;
-        background-color: #C5DFD6;
+        border: 3px solid $color-plan;
+        background-color: $color-uno;
         border-radius: 7px;
         padding: 10px;
                     
@@ -397,8 +397,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 3px solid #d4e2dd;
-        background-color: #C5DFD6;
+        border: 3px solid $color-button;
+        background-color: $color-uno;
         border-radius: 7px;
         padding: 10px;
                 

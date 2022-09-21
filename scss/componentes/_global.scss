@@ -11,7 +11,7 @@
     z-index: +1;
     top: 0;
     right: 0;
-    background-color: rgba(242, 247, 239, 0.6);
+    background-color: $color-seis;
     border-radius: 20px;
     height: 50px;
     margin: 10px;
@@ -30,10 +30,10 @@ body{
 }
 
 footer{
-    background-color: rgba(101, 143, 75, 0.6);
+    background-color: $color-footer1;
     padding: 80px;
     font-size: 20px;
-    border-top: 5px rgba(98, 141, 71, 0.6) solid;
+    border-top: 5px $color-footer2 solid;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -41,11 +41,11 @@ footer{
 }
 
 a{
-        color: #13070A;
+        color: $color-letras1;
         text-decoration: none;
     &:hover{
-        border-bottom: 3px solid green;
-        color: #265301;
+        border-bottom: 3px solid $color-a1;
+        color: $color-a2;
         cursor:pointer;
         font-weight: bold;
     }
@@ -53,13 +53,13 @@ a{
         border-bottom: 5px solid;
     }
     &:active{
-        background: #265301;
-        color: #CDFEAA;
+        background: $color-a2;
+        color: $color-a3;
     }
 }
 
 p{
-    color: #13070A;
+    color: $color-letras1;
     font-size: 15px;
 }
 
@@ -69,8 +69,8 @@ h1{
 }
 
 h3{
-   background-color: #D0AEBB;
-   color: #ffffff;
+   background-color: $color-dos;
+   color: $color-tres;
    padding: 5px;
    letter-spacing: 4px;
    border-radius: 50% 20% / 10% 40%;
@@ -78,8 +78,8 @@ h3{
 }
 
 h4{
-   background-color: #C5DFD6;
-   color: #13070A;
+   background-color: $color-uno;
+   color: $color-letras1;
    font-style:oblique;
    letter-spacing: 2px;
    padding: 20px;
