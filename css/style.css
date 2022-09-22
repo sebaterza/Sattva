@@ -1,3 +1,4 @@
+/*adsdjaskdl */
 /*REGLAS GENERALES*/
 * {
   margin: 0;
@@ -104,7 +105,7 @@ h4 {
   padding-bottom: 40px;
   background-color: transparent;
   font-size: calc(0.8em + 0.8vw);
-  color: white;
+  color: #ffffff;
   text-align: center;
   margin-top: 23%;
   transition: all 1s;
@@ -255,4 +256,199 @@ h4 {
   width: 60%;
 }
 
+/*SERVICIOS*/
+.section4 {
+  margin: 7%;
+  background-color: #D0AEBB;
+  border-radius: 3%;
+  padding: 3%;
+}
+.section4 .plan {
+  color: #dee4da;
+}
+.section4 .plan .planIntegral {
+  padding-bottom: 30px;
+  padding: 30px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+}
 
+.actividades {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  color: #dee4da;
+  background-color: #D0AEBB;
+  font-size: 250%;
+  padding: 2%;
+  border-radius: 3%;
+}
+
+.section5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "gReiki gGemas gMedita" "gAkashi gAroma gMusico";
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
+  justify-content: center;
+  margin: 1%;
+  padding-bottom: 10%;
+}
+.section5 button {
+  font-size: 25px;
+  font-style: italic;
+  --bs-btn-bg: $color-button;
+  --bs-btn-border-color: white;
+  --bs-btn-hover-bg: #D0AEBB;
+  --bs-btn-hover-border-color: white;
+  --bs-btn-active-bg: #265301;
+  --bs-btn-active-border-color: $color-button;
+}
+
+.sec5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #d4e2dd;
+  background-color: #C5DFD6;
+  border-radius: 7px;
+  padding: 10px;
+}
+.sec5 .dReiki {
+  grid-area: gReiki;
+}
+.sec5 .dGemas {
+  grid-area: gGemas;
+}
+.sec5 .dMedita {
+  grid-area: gMedita;
+}
+.sec5 .dAkashi {
+  grid-area: gAkashi;
+}
+.sec5 .dAroma {
+  grid-area: gAroma;
+}
+.sec5 .dMusico {
+  grid-area: gMusico;
+}
+
+/*PRODUCTOS*/
+.section6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.section6 .productos {
+  font-size: 50px;
+  background-color: #D0AEBB;
+  border: 10px solid #e7f1ee;
+  width: 50%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 50% 20%/10% 40%;
+}
+.section6 .productos a {
+  font-size: 40px;
+  background-color: #d4e2dd;
+}
+.section6 .bambooFondo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  margin: 0%;
+}
+
+/*HOLISTICA*/
+.section7 {
+  display: grid;
+  grid-template-columns: repet(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "vel res inci" "cuenc sahu cris" "cart libr limp";
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
+  justify-content: center;
+  margin: 1%;
+  padding-top: 7%;
+  padding-bottom: 10%;
+}
+.section7 .sec7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #dee4da;
+  background-color: #C5DFD6;
+  border-radius: 7px;
+  padding: 10px;
+}
+.section7 .sec7 .velas {
+  grid-area: vel;
+}
+.section7 .sec7 .resinas {
+  grid-area: res;
+}
+.section7 .sec7 .inciensos {
+  grid-area: inci;
+}
+.section7 .sec7 .cuencos {
+  grid-area: cuenc;
+}
+.section7 .sec7 .sahumo {
+  grid-area: sahu;
+}
+.section7 .sec7 .cristales {
+  grid-area: cris;
+}
+.section7 .sec7 .cartas {
+  grid-area: cart;
+}
+.section7 .sec7 .libros {
+  grid-area: libr;
+}
+.section7 .sec7 .limpieza {
+  grid-area: limp;
+}
+
+/*COCINA*/
+.section8 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "espe mort acei" "hierb plant .";
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
+  justify-content: center;
+  margin: 1%;
+  padding-top: 7%;
+  padding-bottom: 10%;
+}
+.section8 .sec8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #d4e2dd;
+  background-color: #C5DFD6;
+  border-radius: 7px;
+  padding: 10px;
+}
+.section8 .sec8 .especias {
+  grid-area: espe;
+}
+.section8 .sec8 .morteros {
+  grid-area: mort;
+}
+.section8 .sec8 .aceite {
+  grid-area: acei;
+}
+.section8 .sec8 .hierbas {
+  grid-area: hierb;
+}
+.section8 .sec8 .plantas {
+  grid-area: plant;
+}
+
+/*# sourceMappingURL=style.css.map */
