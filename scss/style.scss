@@ -5,7 +5,6 @@
 @import "./componentes/global.scss";
 
 
-
 //*INDEX*//
 
 #videoPrincipal{
@@ -14,6 +13,14 @@
     min-height: 100%;
     position: absolute;
     z-index: -1;
+    @media screen and (max-width: 768px){
+        position: relative;
+        justify-content: center;
+    }
+    @media screen and (max-width: 576px){
+        position: relative;
+        justify-content: center;
+    }
  }
  
  .logoPrincipal{
@@ -22,6 +29,12 @@
         transition: all 1s !important;
      &:hover{
         transform: scale(1.05) !important;
+    }
+    @media screen and (max-width: 768px){
+        margin-top: 1%;
+    }
+    @media screen and (max-width: 576px){
+        margin-top: 1%;
     }
 }
 
@@ -36,10 +49,43 @@
     &:hover{
         transform: translate(0px, -20px);
     }
+    @media screen and (max-width: 768px){
+        padding-bottom: 40px;
+        background-color: transparent;
+        font-size: calc(0.8em + 0.8vw);    
+        color: white;
+        text-align: center;
+        margin-top: 1%;
+    }
+    @media screen and (max-width: 576px){
+        padding-bottom: 40px;
+        background-color: transparent;
+        font-size: calc(0.8em + 0.8vw);    
+        color: white;
+        text-align: center;
+        margin-top: 1%;
+    }
 }
 
 .section1{
     padding-bottom: 10%;
+    @media screen and (max-width: 768px){
+        padding-bottom: 0;
+    }
+    @media screen and (max-width: 576px){
+        padding-bottom: 0;
+    }
+}
+
+.imgIndex{
+    @media screen and (max-width: 768px){
+        width: 100%;
+        height: 100%;
+    }
+    @media screen and (max-width: 576px){
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .section2{
@@ -55,6 +101,30 @@
     grid-template-areas:
     "artId artSent artVal"
     ;
+    @media screen and (max-width: 768px){
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        grid-template-areas:
+        "artId" 
+        "artSent"
+        "artVal"
+        ;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width: 576px){
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        grid-template-areas:
+        "artId" 
+        "artSent"
+        "artVal"
+        ;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .section3{
@@ -71,6 +141,32 @@
     "hFundam hFundam hFundam"
     "artAyur artReik artBam"
     ;
+    @media screen and (max-width: 768px){
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "hFundam"
+        "artAyur" 
+        "artReik" 
+        "artBam"
+        ;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width: 576px){
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "hFundam"
+        "artAyur" 
+        "artReik" 
+        "artBam"
+        ;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
 
@@ -170,18 +266,52 @@
     @include flex-repeat2;
 
     margin: 1%;
+
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    @media screen and (max-width: 576px){
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
 } 
 
 .contacto{
     padding: 3%; 
     font-size: 35px;
     background-color:  $color-contacto;
+    
+    @media screen and (max-width: 768px){
+        display: flex;
+        justify-content: center;
+    }
+    @media screen and (max-width: 576px){
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .info{
     padding: 50px;
     background-color: $color-info;
     font-size: 30px;
+    @media screen and (max-width: 768px){
+        display: flex;
+        justify-content: center;
+        padding: 2px;
+        background-color: #dce5e2;
+        font-size: 30px;
+    }
+    @media screen and (max-width: 576px){
+        display: flex;
+        justify-content: center;
+        padding: 2px;
+        background-color: #dce5e2;
+        font-size: 30px;
+    }
 }
 
 .info2{
@@ -189,11 +319,31 @@
     background-color: $color-uno;
     font-size: 17px;
     width: 50%;
+    @media screen and (max-width: 768px){
+        display: flex;
+        justify-content: center;
+        background-color: #C5DFD6;
+        font-size: 15px;
+    }
+    @media screen and (max-width: 576px){
+        display: flex;
+        justify-content: center;
+        background-color: #C5DFD6;
+        font-size: 15px;
+    }
 }
 
 .mapa{
     padding: 50px;
     width: 60%;
+    @media screen and (max-width: 768px){
+        padding: 50px;
+        width: 100%;
+    }
+    @media screen and (max-width: 576px){
+        padding: 50px;
+        width: 100%;
+    }
 }
 
 /*SERVICIOS*/
@@ -206,6 +356,20 @@
 
     .plan{
         color:$color-plan;
+        @media screen and (max-width: 768px){
+            padding-bottom: 5px;
+            padding-top: 50px;
+            font-size: 35px;
+            color:#dee4da;
+            align-items: center;
+        }
+        @media screen and (max-width: 576px){
+            padding-bottom: 5px;
+            padding-top: 50px;
+            font-size: 35px;
+            color:#dee4da;
+            align-items: center;
+        }
 
         .planIntegral{
             padding-bottom: 30px;
@@ -213,7 +377,33 @@
             font-size: 30px;
             display: flex;
             flex-direction: column;
+            @media screen and (max-width: 768px){
+                font-size: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+            @media screen and (max-width: 576px){
+                font-size: 20px;
+                display: flex;
+                flex-direction: column;
+            }
         }
+    }
+    @media screen and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2%;
+        padding: 3%;
+    }
+    @media screen and (max-width: 576px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2%;
+        padding: 3%;
     }
 }
 
@@ -228,6 +418,23 @@
     font-size: 250%;
     padding: 2%;
     border-radius: 3%;
+    
+    @media screen and (max-width: 768px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        padding: 2%;
+        border-radius: 3%;
+    }
+    @media screen and (max-width: 576px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        padding: 2%;
+        border-radius: 3%;
+    }
 }
 
 .section5{
@@ -253,6 +460,42 @@
         --bs-btn-hover-border-color: white;
         --bs-btn-active-bg: #265301;
         --bs-btn-active-border-color: $color-button; 
+    }
+    @media screen and (max-width: 768px){
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6 1fr);
+        grid-template-areas: 
+        "gReiki" 
+        "gGemas"
+        "gMedita"
+        "gAkashi" 
+        "gAroma" 
+        "gMusico"
+        ;
+        grid-column-gap: 0%;       
+        grid-row-gap: 0%;
+        justify-content: center;
+        margin: 1%;
+        padding-bottom: 10%;
+    }
+    @media screen and (max-width: 576px){
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6 1fr);
+        grid-template-areas: 
+        "gReiki" 
+        "gGemas"
+        "gMedita"
+        "gAkashi" 
+        "gAroma" 
+        "gMusico"
+        ;
+        grid-column-gap: 0%;       
+        grid-row-gap: 0%;
+        justify-content: center;
+        margin: 1%;
+        padding-bottom: 10%;
     }
 }
 
@@ -287,6 +530,19 @@
     .dMusico{
         grid-area: gMusico;
     }
+    
+    @media screen and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    @media screen and (max-width: 576px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
 }
 
 /*PRODUCTOS*/
@@ -310,12 +566,38 @@
             font-size: 40px;
             background-color: #d4e2dd  ;
         }
+        @media screen and (max-width: 768px){
+            font-size: 50px;
+            width: 80%;
+            padding: 2%;
+            margin: 10px;
+        }
+        @media screen and (max-width: 576px){
+            font-size: 50px;
+            width: 80%;
+            padding: 2%;
+            margin: 10px;
+        }
     }
     .bambooFondo{
         display: flex;
         flex-wrap: wrap;
         justify-content: right;
         margin: 0%;
+        @media screen and (max-width: 768px){
+            display: none;
+        }
+        @media screen and (max-width: 576px){
+            display: none;
+        }
+    }
+    @media screen and (max-width: 768px){
+        margin-top: 20%;
+        padding-bottom: 30%;
+    }
+    @media screen and (max-width: 576px){
+        margin-top: 20%;
+        padding-bottom: 30%;
     }
 }
 
@@ -381,6 +663,47 @@
             grid-area: limp;
         }
     }
+
+    @media screen and (max-width: 768px){
+        padding-top: 12%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas: 
+        "vel"
+        "res" 
+        "inci"
+        "cuenc" 
+        "sahu" 
+        "cris"
+        "cart" 
+        "libr" 
+        "limp"
+        ;
+        grid-column-gap: 1%;       
+        grid-row-gap: 0.5%;
+        padding-bottom: 40%;
+    }
+    @media screen and (max-width: 576px){
+        padding-top: 12%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas: 
+        "vel"
+        "res" 
+        "inci"
+        "cuenc" 
+        "sahu" 
+        "cris"
+        "cart" 
+        "libr" 
+        "limp"
+        ;
+        grid-column-gap: 1%;       
+        grid-row-gap: 0.5%;
+        padding-bottom: 40%;
+    }
 }
 
 /*COCINA*/
@@ -427,6 +750,47 @@
 
         .plantas{
             grid-area: plant;
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        .section8{
+            padding-top: 12%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 5;
+            grid-template-areas: 
+            "espe" 
+            "mort" 
+            "acei"
+            "hierb" 
+            "plant" 
+            ;
+            grid-column-gap: 2%;       
+            grid-row-gap: 0.5%;
+            justify-content: center;
+            margin: 1%;
+            padding-bottom: 40%;
+        }
+    }
+    @media screen and (max-width: 576px){
+        .section8{
+            padding-top: 12%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 5;
+            grid-template-areas: 
+            "espe" 
+            "mort" 
+            "acei"
+            "hierb" 
+            "plant" 
+            ;
+            grid-column-gap: 2%;       
+            grid-row-gap: 0.5%;
+            justify-content: center;
+            margin: 1%;
+            padding-bottom: 40%;
         }
     }
 }
