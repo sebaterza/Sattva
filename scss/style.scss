@@ -90,11 +90,11 @@
 
 .section2{
 
-    display: $map-get($s23-index,$display23);
+    display: map-get($map: $s23-index , $key: display23);
     
-    padding: $map-get($s23-index,$padd23);
+    padding: map-get($map: $s23-index , $key: padd23);
 
-    grid-column-gap: $map-get($s23-index,$column23);
+    grid-column-gap: map-get($map: $s23-index , $key: column23);
 
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -129,11 +129,11 @@
 
 .section3{
 
-    display: $map-get($s23-index,$display23);
+    display: map-get($map: $s23-index , $key: display23);
     
-    padding: $map-get($s23-index,$padd23);
+    padding: map-get($map: $s23-index , $key: padd23);
 
-    grid-column-gap: $map-get($s23-index,$column23);
+    grid-column-gap: map-get($map: $s23-index , $key: column23);
 
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.1fr 1fr;
