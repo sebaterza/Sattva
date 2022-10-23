@@ -21,15 +21,14 @@
     align-items: center;
     gap: 10px;
     @media screen and (max-width: 768px){
-        display: flex;
-        flex-direction: row;
         justify-content: space-between;
         width: 85%;
         align-items: center;
         border-radius: 10px;
-        margin: 0 auto;
         height: 4%;
-        right: auto;
+        right:auto;
+        left: 6%;
+        
     }
     @media screen and (max-width: 576px){
         display: flex;
@@ -41,6 +40,7 @@
         margin: 0 auto;
         height: 4%;
         right: auto;
+        left: 7%;
     }
     
 }
@@ -50,7 +50,7 @@ body{
     padding: 0;
     font-family: Gabriela, 'Open Sans', sans-serif; 
     background: rgb(220,229,226);
-    background: linear-gradient(0deg, rgba(220,229,226,1) 24%, rgba(77,144,22,1) 100%);
+    background: linear-gradient(0deg, rgba(220,229,226,1) 10%, rgba(72,122,41,1) 61%, rgba(41,78,10,1) 100%);
 }
 
 footer{
@@ -106,10 +106,12 @@ h1{
    padding: 30px; 
    font-size: 50px;  
    @media screen and (max-width: 768px){
-       padding: 0%;    
+       padding: 0%;   
+       font-size: 30px; 
     }
     @media screen and (max-width: 576px){
         padding: 0%;
+        font-size: 30px; 
     }
 }
 

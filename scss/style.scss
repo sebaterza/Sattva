@@ -7,66 +7,6 @@
 
 //*INDEX*//
 
-#videoPrincipal{
-    width: 100%;
-    min-width: 100%;
-    min-height: 100%;
-    position: absolute;
-    z-index: -1;
-    @media screen and (max-width: 768px){
-        position: relative;
-        justify-content: center;
-    }
-    @media screen and (max-width: 576px){
-        position: relative;
-        justify-content: center;
-    }
- }
- 
- .logoPrincipal{
-        margin-left: 35%;
-        margin-top: 10%;
-        transition: all 1s !important;
-     &:hover{
-        transform: scale(1.05) !important;
-    }
-    @media screen and (max-width: 768px){
-        margin-top: 1%;
-    }
-    @media screen and (max-width: 576px){
-        margin-top: 1%;
-    }
-}
-
-.johnmu{
-        padding-bottom: 40px;
-        background-color: transparent;
-        font-size: calc(0.8em + 0.8vw);    
-        color: $color-tres;
-        text-align: center;
-        margin-top: 23%;
-        transition: all 1s;
-    &:hover{
-        transform: translate(0px, -20px);
-    }
-    @media screen and (max-width: 768px){
-        padding-bottom: 40px;
-        background-color: transparent;
-        font-size: calc(0.8em + 0.8vw);    
-        color: white;
-        text-align: center;
-        margin-top: 1%;
-    }
-    @media screen and (max-width: 576px){
-        padding-bottom: 40px;
-        background-color: transparent;
-        font-size: calc(0.8em + 0.8vw);    
-        color: white;
-        text-align: center;
-        margin-top: 1%;
-    }
-}
-
 .section1{
     padding-bottom: 10%;
     @media screen and (max-width: 768px){
@@ -75,26 +15,90 @@
     @media screen and (max-width: 576px){
         padding-bottom: 0;
     }
-}
+    
+    #videoPrincipal{
+        width: 100%;
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        z-index: -1;
+     }
 
-.imgIndex{
-    @media screen and (max-width: 768px){
-        width: 100%;
-        height: 100%;
-    }
-    @media screen and (max-width: 576px){
-        width: 100%;
-        height: 100%;
-    }
+     .logoPrincipal{
+            margin-left: 35%;
+            margin-top: 10%;
+            transition: all 1s !important;
+         &:hover{
+            transform: scale(1.05) !important;
+        }
+        @media screen and (max-width: 768px){
+            margin-top: 80px;
+            margin-bottom: 450px;
+            margin-left: 10%;
+            width: 80%;
+            height: 29.2%;
+        }
+        @media screen and (max-width: 576px){
+            margin-top: 80px;
+            margin-bottom: 450px;
+            margin-left: 10%;
+            width: 80%;
+            height: 29.2%;
+        }
+     }
+
+     .johnmu{
+             padding-bottom: 40px;
+             background-color: transparent;
+             font-size: calc(0.8em + 0.8vw);    
+             color: $color-tres;
+             text-align: center;
+             margin-top: 23%;
+             transition: all 1s;
+         &:hover{
+             transform: translate(0px, -20px);
+         }
+         @media screen and (max-width: 768px){
+             padding-bottom: 5px;
+             background-color: transparent;
+             font-size: calc(1.2em + 1.2vw);    
+             color: white;
+             text-align: center;
+             margin-top: 1%;
+             margin-bottom: 80px;
+             margin-left: 20px;
+             margin-right: 20px;
+         }
+         @media screen and (max-width: 576px){
+             padding-bottom: 5px;
+             background-color: transparent;
+             font-size: calc(1.2em + 1.2vw);    
+             color: white;
+             text-align: center;
+             margin-top: 1%;
+             margin-bottom: 80px;
+         }
+     }
 }
 
 .section2{
-
-    display: map-get($map: $s23-index , $key: display23);
     
-    padding: map-get($map: $s23-index , $key: padd23);
+    .imgIndex{
+        @media screen and (max-width: 768px){
+            width: 100%;
+            height: 100%;
+        }
+        @media screen and (max-width: 576px){
+            width: 100%;
+            height: 100%;
+        }
+    }
 
-    grid-column-gap: map-get($map: $s23-index , $key: column23);
+    display: map-get($s23-index , display23);
+    
+    padding: map-get($s23-index , padd23);
+
+    grid-column-gap: map-get($s23-index , column23);
 
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -112,6 +116,7 @@
         ;
         justify-content: center;
         align-items: center;
+        grid-gap: 15px;
     }
     @media screen and (max-width: 576px){
         display: grid;
@@ -124,16 +129,17 @@
         ;
         justify-content: center;
         align-items: center;
+        grid-gap: 15px;
     }
 }
 
 .section3{
 
-    display: map-get($map: $s23-index , $key: display23);
+    display: map-get($s23-index , display23);
     
-    padding: map-get($map: $s23-index , $key: padd23);
+    padding: map-get($s23-index , padd23);
 
-    grid-column-gap: map-get($map: $s23-index , $key: column23);
+    grid-column-gap: map-get($s23-index , column23);
 
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.1fr 1fr;
@@ -168,8 +174,32 @@
         align-items: center;
     }
 
-}
+    .hFundamentos{
+    
+        @extend %flex-repeat;
 
+        grid-area: hFundam;
+        border: 10px solid $color-uno;
+        background-color: $color-uno;
+        margin-bottom: 20px;
+        transition: all 1s;
+        
+        &:hover{
+            animation: fondosFundam 10s;
+        }
+
+        @media screen and (max-width: 768px){
+            h1{
+                text-align: center;
+            }
+         }
+         @media screen and (max-width: 576px){
+            h1{
+                text-align: center;
+            }
+         }
+    }
+}
 
 @keyframes fondosIndex{
     50%{
@@ -224,20 +254,6 @@
     }
 }
 
-.hFundamentos{
-    
-        @extend %flex-repeat;
-
-        grid-area: hFundam;
-        border: 10px solid $color-uno;
-        background-color: $color-uno;
-        margin-bottom: 20px;
-        transition: all 1s;
-    &:hover{
-        animation: fondosFundam 10s;
-    }
-}
-
 .aAyurveda{
         grid-area: artAyur;
     &:hover{
@@ -262,6 +278,25 @@
     }
 }
 
+.contacto{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    font-size: 44px;
+    color: #FFFF;
+    background-color:  $color-contacto;
+
+    
+    @media screen and (max-width: 768px){
+        display: flex;
+        justify-content: center;
+    }
+    @media screen and (max-width: 576px){
+        display: flex;
+        justify-content: center;
+    }
+}
+
 .sectionContacto{
     @include flex-repeat2;
 
@@ -277,74 +312,70 @@
         align-items: center;
         justify-content: start;
     }
+
+    .info{
+        padding-top: 50px;
+        padding-left: 50px;
+        background-color: $color-info;
+        font-size: 30px;
+        @media screen and (max-width: 768px){
+            display: flex;
+            justify-content: center;
+            padding: 2px;
+            background-color: #dce5e2;
+            font-size: 30px;
+        }
+        @media screen and (max-width: 576px){
+            display: flex;
+            justify-content: center;
+            padding: 2px;
+            background-color: #dce5e2;
+            font-size: 30px;
+        }
+    }
+    
+    .info2{
+        border-radius: 50% 20% / 10% 40%;
+        padding: 50px;
+        background-color: $color-uno;
+        font-size: 17px;
+        width: 70%;
+        line-height: 35px;
+        @media screen and (max-width: 768px){
+            background-color: #C5DFD6;
+            font-size: 15px;
+            padding: 10px;
+            width: 80%;
+        }
+        @media screen and (max-width: 576px){
+            background-color: #C5DFD6;
+            font-size: 15px;
+            padding: 10px;
+            width: 80%s;
+        }
+    }
+
+    .mapa{
+        border-radius: 14% 35% / 35% 14%;
+        padding: 50px;
+        width: 60%;
+        @media screen and (max-width: 768px){
+            padding: 50px;
+            width: 100%;
+        }
+        @media screen and (max-width: 576px){
+            padding: 50px;
+            width: 100%;
+        }
+    }
+
+    .iconoContacto{
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+    }
 } 
 
-.contacto{
-    padding: 3%; 
-    font-size: 35px;
-    background-color:  $color-contacto;
-    
-    @media screen and (max-width: 768px){
-        display: flex;
-        justify-content: center;
-    }
-    @media screen and (max-width: 576px){
-        display: flex;
-        justify-content: center;
-    }
-}
-
-.info{
-    padding: 50px;
-    background-color: $color-info;
-    font-size: 30px;
-    @media screen and (max-width: 768px){
-        display: flex;
-        justify-content: center;
-        padding: 2px;
-        background-color: #dce5e2;
-        font-size: 30px;
-    }
-    @media screen and (max-width: 576px){
-        display: flex;
-        justify-content: center;
-        padding: 2px;
-        background-color: #dce5e2;
-        font-size: 30px;
-    }
-}
-
-.info2{
-    padding: 50px;
-    background-color: $color-uno;
-    font-size: 17px;
-    width: 50%;
-    @media screen and (max-width: 768px){
-        display: flex;
-        justify-content: center;
-        background-color: #C5DFD6;
-        font-size: 15px;
-    }
-    @media screen and (max-width: 576px){
-        display: flex;
-        justify-content: center;
-        background-color: #C5DFD6;
-        font-size: 15px;
-    }
-}
-
-.mapa{
-    padding: 50px;
-    width: 60%;
-    @media screen and (max-width: 768px){
-        padding: 50px;
-        width: 100%;
-    }
-    @media screen and (max-width: 576px){
-        padding: 50px;
-        width: 100%;
-    }
-}
 
 /*SERVICIOS*/
 
@@ -357,14 +388,14 @@
     .plan{
         color:$color-plan;
         @media screen and (max-width: 768px){
-            padding-bottom: 5px;
+            padding-bottom: 30px;
             padding-top: 50px;
             font-size: 35px;
             color:#dee4da;
             align-items: center;
         }
         @media screen and (max-width: 576px){
-            padding-bottom: 5px;
+            padding-bottom: 30px;
             padding-top: 50px;
             font-size: 35px;
             color:#dee4da;
@@ -378,9 +409,10 @@
             display: flex;
             flex-direction: column;
             @media screen and (max-width: 768px){
-                font-size: 20px;
+                font-size: 25px;
                 display: flex;
                 flex-direction: column;
+
             }
             @media screen and (max-width: 576px){
                 font-size: 20px;
@@ -423,7 +455,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 30px;
+        margin: 20px;
         padding: 2%;
         border-radius: 3%;
     }
@@ -460,6 +492,7 @@
         --bs-btn-hover-border-color: white;
         --bs-btn-active-bg: #265301;
         --bs-btn-active-border-color: $color-button; 
+        padding: 4px;
     }
     @media screen and (max-width: 768px){
         display: grid;
@@ -473,11 +506,12 @@
         "gAroma" 
         "gMusico"
         ;
-        grid-column-gap: 0%;       
-        grid-row-gap: 0%;
         justify-content: center;
         margin: 1%;
-        padding-bottom: 10%;
+        padding-bottom: 5px;
+        grid-column-gap: 20px;       
+        grid-row-gap: 20px;
+
     }
     @media screen and (max-width: 576px){
         display: grid;
@@ -491,11 +525,11 @@
         "gAroma" 
         "gMusico"
         ;
-        grid-column-gap: 0%;       
-        grid-row-gap: 0%;
         justify-content: center;
         margin: 1%;
-        padding-bottom: 10%;
+        padding-bottom: 5px;
+        grid-column-gap: 20px;       
+        grid-row-gap: 20px;
     }
 }
 
@@ -535,13 +569,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 10px;
+        padding: 20px;
+        grid-gap: 10px;
     }
     @media screen and (max-width: 576px){
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 10px;
+        padding: 20px;
+        grid-gap: 10px;
+
     }
 }
 
